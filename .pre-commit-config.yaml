@@ -1,0 +1,10 @@
+repos:
+- repo: local
+  hooks:
+    - id: make-project
+      name: make-project
+      entry: make
+      language: system
+
+      # (optional) if true, this hook will run even if there are no matching files.
+      always_run: true
