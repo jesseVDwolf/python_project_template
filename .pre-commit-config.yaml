@@ -1,3 +1,4 @@
+# https://pre-commit.com/#creating-new-hooks
 repos:
 - repo: local
   hooks:
@@ -6,5 +7,8 @@ repos:
       entry: make
       language: system
 
-      # (optional) if true, this hook will run even if there are no matching files.
+      stages: [commit]
+
+      # needed because sytem hook
+      pass_filenames: false
       always_run: true
