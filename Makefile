@@ -1,7 +1,9 @@
 all: install lint test format
 
 install:
-	. .venv/bin/activate; poetry install
+	. .venv/bin/activate; pip install --upgrade pip \
+		&& pip install -r requirements.txt
+
 
 test:
 	. .venv/bin/activate; python -m pytest -vv test_squared.py
