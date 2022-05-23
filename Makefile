@@ -13,3 +13,5 @@ format:
 
 lint:
 	. .venv/bin/activate; pylint --disable=R,C squared.py
+
+hook: format lint test
