@@ -31,8 +31,3 @@ make format
 # test the code using pytest
 make test
 ```
-
-## github actions
-A very simple github actions **.github/workflows/main.yaml** config file is provided to matrix test the project for python versions 3.8, 3.9 and 3.10.
-
-<kbd>squared.py</kbd> and <kbd>test_squared.py</kbd> are there just for example and should be replaced with project specific files.
