@@ -4,7 +4,7 @@ repos:
   hooks:
     - id: make-project
       name: make-project
-      entry: make
+      entry: make hook
       language: system
 
       stages: [commit]
